@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home my pc</title>
+    
+    <!-- Control de eventos -->
+    <script src="./js/jquery-3.7.1.min.js" defer></script>
+    <!-- Control del DOM, animaciones -->
+    <script src="./js/popper.min.js" defer></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" media="screen">
+    <script src="./js/bootstrap.min.js" defer></script>
+    <!-- Propios styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Navbar -->
+    <link rel="stylesheet" href="./css/components/nav.css">
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body style="color: white;">
+
+    <!-- Navbar -->
+    <header>
+        <nav class="position-fixed mt-5 z-2">
+            <ul class="list-unstyled">
+                <li>
+                    <div class="home-icon">
+                        <div class="roof">
+                            <div class="roof-edge"></div>
+                        </div>
+                        <div class="front"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="about-icon">
+                        <div class="head">
+                            <div class="eyes"></div>
+                            <div class="beard"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-icon">
+                        <div class="paper"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mail-icon">
+                        <div class="mail-base">
+                            <div class="mail-top"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <!-- Contenido adicional aquí -->
+        </section>
+    </header>
+
+    <!-- Main content -->
+    <main class="container">
+        <!-- Problema principal y solución -->
+        <section class="sobre-nosotros py-5" id="sobreNosotros" data-aos="fade-up">
+            <h1 class="display-4 text-center">¿Quién es MyPc?</h1>
+            <p class="lead text-center">Somos un proyecto que busca mejorar la experiencia de nuestros usuarios al planear su PC deseada.</p>
+            <h2 class="text-center">¿Alguna vez te has preguntado cuánto valdría tu PC deseada?</h2>
+            <p class="text-center">¿O te gustaría recordar dónde viste un componente para usarlo?</p>
+        </section>
+
+        <!-- Servicio que ofrecemos -->
+        <section class="servicio py-5 bg-dark" id="servicio" data-aos="fade-up">
+            <h1 class="display-4 text-center">¿Cómo funciona MyPC?</h1>
+            <p class="lead text-center">Nuestra aplicación web es fácil de usar y no requiere registro. Simplemente agrega los componentes que te interesan y calcula automáticamente el valor total de tu PC deseada.</p>
+            <p class="text-center font-weight-bold">Características destacadas:</p>
+            <ul class="list-group list-group-flush text-center py-4 z-0">
+                <li class="list-group-item">Guardar y comparar componentes fácilmente.</li>
+                <li class="list-group-item">Calcular el costo total de tu PC personalizada.</li>
+                <li class="list-group-item">Acceso rápido a enlaces de tiendas donde encontraste los componentes.</li>
+            </ul>
+            <div class="text-center py-4">
+                <img id="mypc-image" class="img-fluid rounded shadow-sm" src="./imgs/mypc img.JPG" alt="Imagen de la app">
+                <div class="mt-3">
+                    <a href="https://scorhenao.github.io/My-pc/" class="btn btn-primary btn-lg">¡Presiona aquí para usarla!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contáctanos -->
+        <section class="contactanos py-5" id="contactanos" data-aos="fade-up">
+            <h1 class="display-4 text-center">Contáctanos</h1>
+            <p class="lead text-center">Si tienes alguna pregunta o duda, no dudes en contactarnos.</p>
+            <form class="w-50 mx-auto">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Asunto">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-lg">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sponsors -->
+        <section class="sponsor-section py-5 bg-dark" data-aos="fade-up">
+            <h2 class="text-center">Nuestros Sponsors</h2>
+            <div class="slider d-flex justify-content-around align-items-center">
+                <a href="https://example1.com" target="_blank">
+                    <img src="./imgs/sponsor1.png" class="img-fluid sponsor-logo" alt="Sponsor 1">
+                </a>
+                <a href="https://example2.com" target="_blank">
+                    <img src="./imgs/sponsor2.png" class="img-fluid sponsor-logo" alt="Sponsor 2">
+                </a>
+                <a href="https://example3.com" target="_blank">
+                    <img src="./imgs/sponsor3.png" class="img-fluid sponsor-logo" alt="Sponsor 3">
+                </a>
+                <a href="https://example4.com" target="_blank">
+                    <img src="./imgs/sponsor4.png" class="img-fluid sponsor-logo" alt="Sponsor 4">
+                </a>
+                <a href="https://example5.com" target="_blank">
+                    <img src="./imgs/sponsor5.webp" class="img-fluid sponsor-logo" alt="Sponsor 5">
+                </a>
+            </div>
+        </section>
+
+        <!-- Mapa de contacto -->
+        <div class="contact-map-container" data-aos="fade-up">
+            <h2>¿Dónde nos ubicamos?</h2>
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.5263084894426!2d-75.58051417522944!3d6.255693780142175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44283300000001%3A0x40a442a0e118f92a!2sPlaza%20Minorista%20Jos%C3%A9%20Mar%C3%ADa%20Villa!5e0!3m2!1sen!2sco!4v1694532359305!5m2!1sen!2sco"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <p>Encuentra los creadores de myPc Plaza Minorista José María Villa, Medellín, Colombia.</p>
+        </div>
+    </main>
+
+    <!-- Botón con imagen -->
+    <button id="helpBtn" class="btn btn-secondary rounded-circle p-3" style="position: fixed; bottom: 20px; right: 20px;" data-bs-toggle="modal" data-bs-target="#helpModal">
+        <img style="width: 24px;" src="./imgs/helpIcon.png" alt="Help">
+    </button>
+
+    <!-- Modal de ayuda -->
+    <div id="helpModal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white"> <!-- Fondo oscuro y texto blanco -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Formulario de Ayuda</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="helpForm" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" class="form-control" required>
+                            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" class="form-control" required>
+                            <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" class="form-control" rows="3" required></textarea>
+                            <div class="invalid-feedback">Por favor ingresa tu mensaje.</div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init(); // Inicializa AOS
+        });
+    </script>
+</body>
+</html>
